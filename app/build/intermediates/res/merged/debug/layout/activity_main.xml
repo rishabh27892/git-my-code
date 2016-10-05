@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="5dp"
+
+    tools:context="com.rishabh.chauhan.final_aplication.MainActivity">
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="380dp">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mapping Mode"
+                    android:textSize="15dp"
+                    android:id="@+id/T_heading1"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:text="AP"
+                        android:textSize="8dp"
+                        android:id="@+id/B_ap"
+                        android:onClick="AP"/>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:text="Store"
+                        android:textSize="8dp"
+                        android:onClick="store"
+                        android:id="@+id/B_store"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="15dp"
+                    android:textSize="8dp"
+                    android:text="Value"
+                    android:id="@+id/T_value"/>
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="FWD"
+                        android:onClick="fwd"
+                        android:textSize="8dp"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/B_fwd"/>
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="LT"
+                        android:onClick="lt"
+                        android:textSize="8dp"
+                        android:id="@+id/B_lt"
+                        android:layout_below="@id/B_fwd"/>
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="RT"
+                        android:onClick="rt"
+                        android:textSize="8dp"
+                        android:layout_toRightOf="@id/B_lt"
+                        android:layout_below="@id/B_fwd"
+                        android:id="@+id/B_rt"/>
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:text="BWD"
+                        android:textSize="8dp"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/B_bwd"
+                        android:onClick="bwd"
+                        android:layout_below="@id/B_lt"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Finger Printing Mode"
+                        android:textSize="15dp"
+                        android:id="@+id/T_heading2"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="SHOW_CURRENT"
+                        android:textSize="8dp"
+                        android:onClick="show_current"
+                        android:id="@+id/B_showcurrent"/>
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text="S"
+                        android:onClick="savetextfile"
+                        android:textSize="8dp"
+
+                        android:id="@+id/B_savetextfile"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current position"
+                        android:layout_below="@id/T_heading2"
+                        android:textSize="8dp"
+                        android:id="@+id/T_currentposition"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Final position"
+                        android:textSize="15dp"
+                        android:id="@+id/T_finalposition"
+                        />
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/R_group"
+                        >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:textSize="8dp"
+                                android:text="0"
+                                android:id="@+id/R_0"
+                                android:onClick="R0"/>
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:textSize="8dp"
+                                android:onClick="R1"
+                                android:text="1"
+                                android:id="@+id/R_1"/>
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:textSize="8dp"
+                                android:text="2"
+                                android:onClick="R2"
+                                android:id="@+id/R_2"/>
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:textSize="8dp"
+                                android:text="3"
+                                android:onClick="R3"
+                                android:id="@+id/R_3"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="8dp">
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:textSize="8dp"
+                                android:text="4"
+                                android:onClick="R4"
+                                android:id="@+id/R_4"/>
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:textSize="8dp"
+                                android:text="5"
+                                android:onClick="R5"
+                                android:id="@+id/R_5"/>
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:textSize="8dp"
+                                android:text="6"
+                                android:onClick="R6"
+                                android:id="@+id/R_6"/>
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:textSize="8dp"
+                                android:text="7"
+                                android:onClick="R7"
+                                android:id="@+id/R_7"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="400dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="8dp"
+                    android:text="go"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="go"
+                    />
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp">
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="130dp"
+                        android:orientation="vertical">
+                        <Button
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:textSize="8dp"
+                            android:text="0"
+                            android:id="@+id/B_G0"/>
+                        <Button
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:textSize="8dp"
+                            android:text="2"
+                            android:id="@+id/B_G2"/>
+                        <Button
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:textSize="8dp"
+                            android:text="4"
+                            android:id="@+id/B_G4"/>
+                        <Button
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:textSize="8dp"
+                            android:text="6"
+                            android:id="@+id/B_G6"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="130dp"
+                        android:orientation="vertical">
+                        <Button
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:textSize="8dp"
+                            android:text="1"
+                            android:id="@+id/B_G1"/>
+                        <Button
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:textSize="8dp"
+                            android:text="3"
+                            android:id="@+id/B_G3"/>
+                        <Button
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:textSize="8dp"
+                            android:id="@+id/B_G5"
+                            android:text="5"/>
+                        <Button
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:textSize="8dp"
+                            android:text="7"
+                            android:id="@+id/B_G7"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DISPLAY"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MESSAGE"
+                        android:id="@+id/T_MESSAGE"
+                        android:textSize="9dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/T_STATUS"
+                        android:textSize="9dp"
+                        android:text="STATUS"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/T_ALERT"
+                        android:textSize="9dp"
+                        android:text="ALERT"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/T_INFO"
+                        android:textSize="9dp"
+                        android:text="INFO"/>
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/list"
+                            android:textSize="2sp">
+                        </ListView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+</ScrollView>
+</LinearLayout>
