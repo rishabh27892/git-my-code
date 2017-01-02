@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.rishabh.chauhan.happybirthday.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/r"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_margin="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#E0FFFF"
+        android:text="Rishabh"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginTop="39dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="horizontal"
+    tools:context="com.rishabh.chauhan.myapplication.MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:text="data (STEP1)"
+            android:onClick="data"
+            android:textSize="5dp"
+            android:id="@+id/data"
+            />
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:text="Display (STEP2)"
+            android:onClick="display"
+            android:textSize="5dp"
+            android:id="@+id/display"
+            />
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:text="scan final (STEP3)"
+            android:id="@+id/Wifi_Button"
+            android:onClick="scan_final"
+            android:textSize="5dp"/>
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:textSize="5dp"
+            android:text="SS"
+            android:onClick="screenshot"
+            android:id="@+id/Wifi_save"
+            />
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:text="Check (STEP5)"
+            android:onClick="check"
+            android:textSize="5dp"
+            android:id="@+id/Wifi_check"
+            />
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:text="Sav_txt"
+            android:textSize="5dp"
+            android:onClick="savetextfile"
+            android:id="@+id/Wifi_Button_toggle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="On/Off"
+            android:textSize="8dp"
+            android:id="@+id/onoff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text1"
+            android:textSize="8dp"
+            android:id="@+id/text1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text2"
+            android:textSize="8dp"
+            android:id="@+id/text2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text3"
+            android:textSize="8dp"
+            android:id="@+id/text3"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text4"
+            android:textSize="8dp"
+            android:id="@+id/text4"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text5"
+            android:textSize="8dp"
+            android:id="@+id/text5"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text6"
+            android:textSize="8dp"
+            android:id="@+id/text6"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text7"
+            android:textSize="8dp"
+            android:id="@+id/text7"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text8"
+            android:textSize="8dp"
+            android:id="@+id/text8"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <ListView
+            android:layout_width="110dp"
+            android:layout_height="370dp"
+            android:id="@+id/your_list_view_id"
+            android:textSize="8dp"
+            />
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="500dp"
+            android:textSize="10dp"
+            android:text="!!"/>
+        <ListView
+            android:layout_width="110dp"
+            android:layout_height="370dp"
+            android:id="@+id/your_list_view_id2"
+            android:textSize="8dp"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
